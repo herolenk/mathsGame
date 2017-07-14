@@ -10,5 +10,7 @@ html{
     margin: 0 auto;
     margin-top: 250px;
     padding: 10px;
-    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 10px #009de4;
+ 
 }
