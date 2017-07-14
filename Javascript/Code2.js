@@ -1,6 +1,6 @@
 /*///////////////*/
 
-/* Area 1: Clicking on Answer */ 
+/* Area 2: Clicking on Answer */ 
 
 /*///////////////*/
 
