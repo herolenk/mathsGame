@@ -55,7 +55,7 @@ html{
 
 
 /*///////////////*/
-/* Question and its Options */
+/* Question - Question Options - Instruction  */
 /*///////////////*/
 
 
@@ -70,4 +70,15 @@ html{
     padding-top: 15px;
     font-family: cursive, sans-serif,serif;
     color: black;
+}
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: #B481D9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    font-size: 17px;
+    box-shadow:0 4px #8153a8;
+    
 }
