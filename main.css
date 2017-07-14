@@ -1,3 +1,8 @@
+/*///////////////*/
+/* General */
+/*///////////////*/
+
+
 html{
     height: 100%;
     background: radial-gradient(circle, #fff, #ccc);
@@ -7,13 +12,18 @@ html{
     height: 400px;
     width: 550px;
     background-color: #9DD2EA;
-    margin: 0 auto;
-    margin-top: 250px;
+    margin: 250px auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px 10px #009de4;
     position: relative;
 }
+
+
+/*///////////////*/
+/* Score - Correct - Wrong */
+/*///////////////*/
+
 
 #score{
     background-color: #F1FF92;
@@ -36,9 +46,28 @@ html{
     
     background-color: #42e252;  
     
-}
+} 
 #wrong{
     
     background-color: #de401a;
     
+}
+
+
+/*///////////////*/
+/* Question and its Options */
+/*///////////////*/
+
+
+#question{
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #9DA0EA;
+    box-shadow: 0 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 15px;
+    font-family: cursive, sans-serif,serif;
+    color: black;
 }
