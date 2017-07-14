@@ -1,14 +1,17 @@
 /*///////////////*/
+
+
 /* General */
+
+
 /*///////////////*/
 
-
-html{
+html {
     height: 100%;
     background: radial-gradient(circle, #fff, #ccc);
 }
 
-.container{
+.container {
     height: 400px;
     width: 550px;
     background-color: #9DD2EA;
@@ -21,11 +24,14 @@ html{
 
 
 /*///////////////*/
+
+
 /* Score - Correct - Wrong */
+
+
 /*///////////////*/
 
-
-#score{
+#score {
     background-color: #F1FF92;
     color: #888E5F;
     padding: 11px;
@@ -34,32 +40,34 @@ html{
     width: 60px;
     box-shadow: 0px 4px #9da853;
 }
+
 #correct,
-#wrong{
-    position:absolute;
+#wrong {
+    position: absolute;
     left: 250px;
     color: white;
     padding: 11px;
     display: none;
 }
-#correct{
-    
-    background-color: #42e252;  
-    
-} 
-#wrong{
-    
+
+#correct {
+    background-color: #42e252;
+}
+
+#wrong {
     background-color: #de401a;
-    
 }
 
 
 /*///////////////*/
+
+
 /* Question - Instruction  */
+
+
 /*///////////////*/
 
-
-#question{
+#question {
     width: 450px;
     height: 150px;
     margin: 50px auto 10px auto;
@@ -68,10 +76,11 @@ html{
     font-size: 100px;
     text-align: center;
     padding-top: 15px;
-    font-family: cursive, sans-serif,serif;
+    font-family: cursive, sans-serif, serif;
     color: black;
 }
-#instruction{
+
+#instruction {
     width: 450px;
     height: 50px;
     background-color: #B481D9;
@@ -79,43 +88,55 @@ html{
     text-align: center;
     line-height: 45px;
     font-size: 17px;
-    box-shadow:0 4px #8153a8;
-    
+    box-shadow: 0 4px #8153a8;
 }
 
 
 /*///////////////*/
-/* Boxes */
+
+
+/* Choice Boxes */
+
+
 /*///////////////*/
-#choices{
+
+#choices {
     width: 450px;
     height: 100px;
     margin: 5px auto;
-    
 }
 
-.box{
+.box {
     height: 85px;
     width: 85px;
     background-color: white;
     float: left;
     margin-right: 36.5px;
     border-radius: 7px;
-    cursor:pointer;
-    box-shadow: 0 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
     text-align: center;
     line-height: 80px;
-    
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
 }
-.box:hover{
+
+.box:hover {
     background-color: #9C89F6;
     color: white;
     box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active {
+    box-shadow: 0px 0px #6b54d3;
+    position: relative;
+    top: 4px;
     
 }
 
-#box4{
+#box4 {
     margin-right: 0;
 }
-
-
