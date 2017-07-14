@@ -55,7 +55,7 @@ html{
 
 
 /*///////////////*/
-/* Question - Question Options - Instruction  */
+/* Question - Instruction  */
 /*///////////////*/
 
 
@@ -82,3 +82,40 @@ html{
     box-shadow:0 4px #8153a8;
     
 }
+
+
+/*///////////////*/
+/* Boxes */
+/*///////////////*/
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    
+}
+
+.box{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36.5px;
+    border-radius: 7px;
+    cursor:pointer;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 80px;
+    
+}
+.box:hover{
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    
+}
+
+#box4{
+    margin-right: 0;
+}
+
+
