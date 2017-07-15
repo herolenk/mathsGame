@@ -241,3 +241,10 @@ html {
     line-height: 80px;
     text-transform:uppercase;
 }
+
+#lastScore{
+    position: relative;
+    font-size: 1.2em;
+    bottom: 45px;
+    right: 10px;
+}
