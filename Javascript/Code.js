@@ -53,6 +53,7 @@ document.getElementById("startResetButton").onclick = function(){
           
           function stopCountdown(){
               clearInterval(action);
+              document.getElementById("gameOver").style.display = "block";
           }
           
       }
