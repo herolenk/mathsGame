@@ -104,14 +104,19 @@ document.getElementById("startResetButton").onclick = function(){
             /* Wrong Answer boxes*/
 
             for(i=1; i<5; i++){
-                if(i !== correctPosition){
+                if(i != correctPosition){
                     //generate a wrong answer
-                    var wrongAnswer = (1 + Math.round(Math.random()*9))*(1 + Math.round(Math.random()*9));
-                    changeInnerHTML("box" + i, wrongAnswer);
+                    var wrongAnswer;
+                    do {                        
+                        wrongAnswer = (1 + Math.round(Math.random()*9))*(1 + Math.round(Math.random()*9));
+                        changeInnerHTML("box" + i, wrongAnswer);}while(wrongAnswer == correctAnswer){
+
+                        }
                 }
             }
 
             }
+
          
       }
 }
