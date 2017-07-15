@@ -33,6 +33,9 @@ document.getElementById("startResetButton").onclick = function(){
           show("timeRemaining");
           timeRemaining = 3;
           changeInnerHTML("timeRemainingValue", timeRemaining);
+          
+        //Hide game over box
+          hide("gameOver");
         
         /* Functions */
           
