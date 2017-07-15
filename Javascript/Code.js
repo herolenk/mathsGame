@@ -21,19 +21,18 @@ document.getElementById("startResetButton").onclick = function(){
           
         //Change button to reset
           
-          document.getElementById("startResetButton").innerHTML = "Reset";         
+          changeInnerHTML("startResetButton", "Reset");
           
         //Set score to 0
           
           score = 2; 
-          document.getElementById("scoreValue").innerHTML = score;
+          changeInnerHTML("scoreValue", score);
           
         //Show countdown box & Set Remaining Time
           
           show("timeRemaining");
           timeRemaining = 3;
-          document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
-          
+          changeInnerHTML("timeRemainingValue", timeRemaining);
           
         /* Functions */
           
@@ -44,7 +43,7 @@ document.getElementById("startResetButton").onclick = function(){
           
           function decreaseTime(){
             timeRemaining--;
-            document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
+            changeInnerHTML("timeRemainingValue", timeRemaining);
                   
             if(timeRemaining == 0){//Game Over
                       stopCountdown();
@@ -55,9 +54,9 @@ document.getElementById("startResetButton").onclick = function(){
               clearInterval(action);
               playing = false; //Change game mode to not playing
               show("gameOver");
-              document.getElementById("gameOverText").innerHTML = "Game over";
-              document.getElementById("lastScore").innerHTML = "Score: " + score;
-              document.getElementById("startResetButton").innerHTML = "Start Game";
+              changeInnerHTML("gameOverText", "Game Over");
+              changeInnerHTML("lastScore", "Score: " + score);
+              changeInnerHTML("startResetButton","Start Game");
               hide("timeRemaining");
 
           }
@@ -69,7 +68,7 @@ document.getElementById("startResetButton").onclick = function(){
               document.getElementById(Id).style.display = "block";
           }
           //Create function for changing innerHTML
-          function change(Id,Content){
+          function changeInnerHTML(Id,Content){
               document.getElementById(Id).innerHTML = Content;
           }
          
