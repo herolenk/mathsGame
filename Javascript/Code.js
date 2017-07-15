@@ -9,7 +9,12 @@ document.getElementById("startResetButton").onclick = function(){
        
       }else{ //İf we are not playing this button starts the game
         
+        //Start game
+          playing = true;
+          
+          
         //Set score to 0
+          
           score = 0; 
           document.getElementById("scoreValue").innerHTML = score;
           
@@ -18,6 +23,7 @@ document.getElementById("startResetButton").onclick = function(){
           document.getElementById("timeRemaining").style.display = "block";
           
         //Change button to reset
+          
           document.getElementById("startResetButton").innerHTML = "Reset";
           
           
