@@ -36,15 +36,24 @@ document.getElementById("startResetButton").onclick = function(){
           
           
         /* Functions */
+          
           function startCountdown(){
             action = setInterval(decreaseTime, 1000);
-            function decreaseTime(){
-                  timeRemaining--;
-                  document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
-              }     
+            decreaseTime();
           }
           
-
+          function decreaseTime(){
+            timeRemaining--;
+            document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
+                  
+            if(timeRemaining == 0){//Game Over
+                      stopCountdown();
+                  }
+              }
+          
+          function stopCountdown(){
+              clearInterval(action);
+          }
           
       }
 }
