@@ -105,13 +105,16 @@ document.getElementById("startResetButton").onclick = function(){
 
             for(i=1; i<5; i++){
                 if(i != correctPosition){
+                    var answers = [correctAnswer];
                     //generate a wrong answer
                     var wrongAnswer;
                     do {                        
                         wrongAnswer = (1 + Math.round(Math.random()*9))*(1 + Math.round(Math.random()*9));
-                        changeInnerHTML("box" + i, wrongAnswer);}while(wrongAnswer == correctAnswer){
-
+                    }while(answers.indexOf(wrongAnswer) > -1){
+                        changeInnerHTML("box" + i, wrongAnswer);
+                        answers.push(wrongAnswer);
                         }
+                    
                 }
             }
 
