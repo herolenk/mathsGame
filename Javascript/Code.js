@@ -1,6 +1,8 @@
 /* Tell Browser what to do when we click on start/reset button */
 var playing = false;
 var score;
+var action;
+var timeRemaining;
 document.getElementById("startResetButton").onclick = function(){
     
    if(playing == true){ //Check if we playing or not
@@ -9,23 +11,34 @@ document.getElementById("startResetButton").onclick = function(){
        
       }else{ //İf we are not playing this button starts the game
         
+        //Start Countdown 
+          
+          startCountdown();
+          
         //Start game
           playing = true;
           
+          
+        //Change button to reset
+          
+          document.getElementById("startResetButton").innerHTML = "Reset";         
           
         //Set score to 0
           
           score = 0; 
           document.getElementById("scoreValue").innerHTML = score;
           
-        //Show countdown box
+        //Show countdown box & Set Remaining Time
           
           document.getElementById("timeRemaining").style.display = "block";
+          timeRemaining = 60;
+          document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
           
-        //Change button to reset
           
-          document.getElementById("startResetButton").innerHTML = "Reset";
-          
+        /* Functions */
+          function startCountdown(){
+       
+          }
           
 
           
