@@ -33,7 +33,7 @@ document.getElementById("startResetButton").onclick = function(){
           show("timeRemaining");
           timeRemaining = 3;
           changeInnerHTML("timeRemainingValue", timeRemaining);
-          
+        
         /* Functions */
           
           function startCountdown(){//Start Counter
