@@ -58,7 +58,8 @@ document.getElementById("startResetButton").onclick = function(){
               changeInnerHTML("lastScore", "Score: " + score);
               changeInnerHTML("startResetButton","Start Game");
               hide("timeRemaining");
-
+              hide("correct");
+              hide("wrong");
           }
           //Create function for display 
           function hide(Id){
