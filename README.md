@@ -2,4 +2,6 @@
 
 ### See on My Blog
 
-See the Game [Play](http://www.ritrik.com/mathsGame/) for details.
+ [Play the Game](http://www.ritrik.com/mathsGame/)
+
+Game is part of my web development course project :) 
