@@ -61,6 +61,12 @@ document.getElementById("startResetButton").onclick = function(){
               document.getElementById("timeRemaining").style.display = "none";
 
           }
-          
+          //Create function for display 
+          function hide(Id){
+              document.getElementById(Id).style.display = "none";
+          }
+          function show(Id){
+              document.getElementById(Id).style.display = "block";
+          }
       }
 }
