@@ -30,7 +30,7 @@ document.getElementById("startResetButton").onclick = function(){
           
         //Show countdown box & Set Remaining Time
           
-          document.getElementById("timeRemaining").style.display = "block";
+          show("timeRemaining");
           timeRemaining = 3;
           document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
           
@@ -54,11 +54,11 @@ document.getElementById("startResetButton").onclick = function(){
           function stopCountdown(){//Stop game
               clearInterval(action);
               playing = false; //Change game mode to not playing
-              document.getElementById("gameOver").style.display = "block";
+              show("gameOver");
               document.getElementById("gameOverText").innerHTML = "Game over";
               document.getElementById("lastScore").innerHTML = "Score: " + score;
               document.getElementById("startResetButton").innerHTML = "Start Game";
-              document.getElementById("timeRemaining").style.display = "none";
+              hide("timeRemaining");
 
           }
           //Create function for display 
@@ -68,5 +68,6 @@ document.getElementById("startResetButton").onclick = function(){
           function show(Id){
               document.getElementById(Id).style.display = "block";
           }
+         
       }
 }
