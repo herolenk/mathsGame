@@ -16,17 +16,6 @@
 /*///////////////*/
 /*///////////////*/ /*///////////////*/ /*///////////////*/ /*///////////////*/
 
-var remainingTime = 60;
-
-var timeRemainingValue = document.getElementById("timeRemainingValue");
-
-var checkTime = setInterval(decreaseTime, 1000);
-
-function decreaseTime(){
-    remainingTime--;
-    timeRemainingValue.innerHTML = remainingTime;
-}
-
 
 
 
