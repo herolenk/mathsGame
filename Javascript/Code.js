@@ -1,7 +1,7 @@
 /* Tell Browser what to do when we click on start/reset button */
 var playing = false;
 var score;
-document.getElementById("start-reset").onclick = function(){
+document.getElementById("startResetButton").onclick = function(){
     
    if(playing == true){ //Check if we playing or not
       
@@ -15,8 +15,12 @@ document.getElementById("start-reset").onclick = function(){
           
         //Show countdown box
           
-          document.getElementById("timeRemaining").style.display = "block;"
-
+          document.getElementById("timeRemaining").style.display = "block";
+          
+        //Change button to reset
+          document.getElementById("startResetButton").innerHTML = "Reset";
+          
+          
 
           
       }
