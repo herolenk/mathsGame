@@ -43,10 +43,10 @@
 
 /* If we click on the start/reset button If we are not playing this means button is start button*/
 /* Therefore do this */
-/* Set score to 0*/
+/* Set score to 0*///+
 /* Generate new question&answers */
-/* Change button test to reset game */
-/* Show countdown box */
+/* Change button test to reset game *///+
+/* Show countdown box *///+
 /* Reduce time by 1sec in loops */
 /* Every sec check if time left  */
 /* If time left, continue  */
