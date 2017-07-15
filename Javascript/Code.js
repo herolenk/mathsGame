@@ -25,7 +25,7 @@ document.getElementById("startResetButton").onclick = function(){
           
         //Set score to 0
           
-          score = 0; 
+          score = 2; 
           document.getElementById("scoreValue").innerHTML = score;
           
         //Show countdown box & Set Remaining Time
@@ -51,11 +51,15 @@ document.getElementById("startResetButton").onclick = function(){
                   }
               }
           
-          function stopCountdown(){
+          function stopCountdown(){//Stop game
               clearInterval(action);
+              playing = false; //Change game mode to not playing
               document.getElementById("gameOver").style.display = "block";
               document.getElementById("gameOverText").innerHTML = "Game over";
               document.getElementById("lastScore").innerHTML = "Score: " + score;
+              document.getElementById("startResetButton").innerHTML = "Start Game";
+              document.getElementById("timeRemaining").style.display = "none";
+
           }
           
       }
