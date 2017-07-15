@@ -68,6 +68,10 @@ document.getElementById("startResetButton").onclick = function(){
           function show(Id){
               document.getElementById(Id).style.display = "block";
           }
+          //Create function for changing innerHTML
+          function change(Id,Content){
+              document.getElementById(Id).innerHTML = Content;
+          }
          
       }
 }
