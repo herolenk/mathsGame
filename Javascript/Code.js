@@ -26,21 +26,57 @@ document.getElementById("startResetButton").onclick = function(){
           
         //Set score to 0
           
-          score = 2; 
+          score = 0; 
           changeInnerHTML("scoreValue", score);
           
         //Show countdown box & Set Remaining Time
           
           show("timeRemaining");
-          timeRemaining = 3;
+          timeRemaining = 60;
           changeInnerHTML("timeRemainingValue", timeRemaining);
           
         //Hide game over box
           hide("gameOver");
         //Generate question and answers
           generateQA();
-
-        /* Functions */
+          
+     
+      }
+    /* If we click on answer box*/
+    
+   
+    document.getElementById("box1").onclick = function(){
+        //If we are playing
+        if(playing == true){
+           //Check if the answer is correct
+            if(this.innerHTML == correctAnswer){//if correct
+               //Answer is correct , Increase score by 1
+                score++;
+                changeInnerHTML("scoreValue", score);
+                
+              //hide wrong box , show correct box
+                hide("wrong");
+                show("correct");
+                setTimeout(function(){
+                    hide("correct");
+                }, 1000);
+              //Generate new question
+                generateQA();
+               }else{//if wrong
+               show("wrong");
+               hide("correct");
+               setTimeout(function(){
+                   hide("wrong");
+               }, 1000);
+               }
+            
+           }
+    }
+    
+    
+    
+}
+ /* Functions */
           
           function startCountdown(){//Start Counter
             action = setInterval(decreaseTime, 1000);
@@ -73,7 +109,6 @@ document.getElementById("startResetButton").onclick = function(){
               //Change game mode to not playing
               playing = false; 
           }
-          
           //Create function for display 
           function hide(Id){//Hide Element
               document.getElementById(Id).style.display = "none";
@@ -120,6 +155,3 @@ document.getElementById("startResetButton").onclick = function(){
 
             }
 
-         
-      }
-}
